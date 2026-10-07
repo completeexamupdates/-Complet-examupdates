@@ -1,0 +1,137 @@
+from pathlib import Path
+
+html = r'''<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Madhya Pradesh - Sarkari Kaam | Complete Exam Updates</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#eef5fb;color:#1d2b3a}
+.container{max-width:1100px;margin:auto;padding:18px}
+.header{background:linear-gradient(135deg,#0d5b91,#164b78);color:#fff;border-radius:18px;padding:24px 18px;text-align:center;box-shadow:0 8px 20px #0002}
+.header h1{margin:0 0 8px;font-size:30px}
+.header p{margin:0;font-size:16px}
+.breadcrumb{margin:18px 0;padding:14px 16px;background:#fff;border-radius:12px;box-shadow:0 3px 10px #0001}
+.breadcrumb a{color:#12629a;text-decoration:none;font-weight:700}
+.search{width:100%;padding:15px 18px;border:2px solid #d6e2ec;border-radius:12px;font-size:16px;outline:none;margin-bottom:20px}
+.search:focus{border-color:#1670ad}
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.card{display:block;text-decoration:none;color:#1d2b3a;background:linear-gradient(#fff,#f5f9fc);padding:20px;border-radius:16px;border:1px solid #dbe6ef;box-shadow:0 5px 12px #00000012;transition:.2s}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 18px #0002}
+.icon{font-size:30px;margin-bottom:8px}
+.card h2{font-size:19px;margin:0 0 5px}
+.card p{margin:0;color:#667788;font-size:14px;line-height:1.5}
+.footer{text-align:center;color:#667788;padding:28px 10px}
+@media(max-width:650px){.container{padding:12px}.header h1{font-size:25px}.grid{grid-template-columns:1fr}.card{padding:17px}}
+</style>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1>🇮🇳 Madhya Pradesh</h1>
+    <p>सरकारी काम और ऑनलाइन सेवाएं</p>
+  </header>
+
+  <div class="breadcrumb">
+    <a href="../index.html">🏠 Home</a> &nbsp;›&nbsp;
+    <a href="../sarkari-kaam.html">सरकारी काम</a> &nbsp;›&nbsp;
+    <b>Madhya Pradesh</b>
+  </div>
+
+  <input class="search" id="search" type="search"
+         placeholder="🔎 सरकारी योजना, प्रमाण पत्र, किसान, पेंशन आदि खोजें...">
+
+  <main class="grid" id="cards">
+    <a class="card" href="#"><div class="icon">📋</div><h2>सरकारी योजनाएं</h2><p>मध्य प्रदेश की प्रमुख सरकारी योजनाओं की जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🎓</div><h2>Scholarship</h2><p>छात्रवृत्ति और विद्यार्थियों से जुड़ी सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">📝</div><h2>Admission</h2><p>स्कूल, कॉलेज और अन्य प्रवेश संबंधी जानकारी।</p></a>
+
+    <a class="card" href="#"><div class="icon">📜</div><h2>जाति प्रमाण पत्र</h2><p>जाति प्रमाण पत्र आवेदन, दस्तावेज और स्थिति।</p></a>
+    <a class="card" href="#"><div class="icon">💰</div><h2>आय प्रमाण पत्र</h2><p>आय प्रमाण पत्र की आवेदन प्रक्रिया और जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🏠</div><h2>निवास प्रमाण पत्र</h2><p>मूल निवासी/निवास प्रमाण पत्र की सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">📄</div><h2>EWS Certificate</h2><p>EWS प्रमाण पत्र से संबंधित जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">👶</div><h2>जन्म प्रमाण पत्र</h2><p>जन्म प्रमाण पत्र आवेदन एवं सत्यापन।</p></a>
+    <a class="card" href="#"><div class="icon">🕊️</div><h2>मृत्यु प्रमाण पत्र</h2><p>मृत्यु प्रमाण पत्र संबंधी सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">💍</div><h2>विवाह पंजीयन</h2><p>विवाह पंजीकरण और संबंधित सेवाएं।</p></a>
+
+    <a class="card" href="#"><div class="icon">🪪</div><h2>समग्र ID</h2><p>समग्र परिवार एवं सदस्य ID से संबंधित सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">🍚</div><h2>राशन कार्ड</h2><p>राशन कार्ड आवेदन, सदस्य और स्थिति संबंधी जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🆔</div><h2>आधार संबंधित सेवाएं</h2><p>आधार से जुड़ी उपयोगी सरकारी जानकारी।</p></a>
+
+    <a class="card" href="#"><div class="icon">🌾</div><h2>किसान योजनाएं</h2><p>किसानों के लिए योजनाएं और सहायता।</p></a>
+    <a class="card" href="#"><div class="icon">🚜</div><h2>कृषि सेवाएं</h2><p>कृषि विभाग की ऑनलाइन सेवाएं और जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🛡️</div><h2>फसल बीमा</h2><p>फसल बीमा और संबंधित जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🧑‍🌾</div><h2>किसान पंजीयन</h2><p>किसान पंजीकरण से संबंधित सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">💳</div><h2>कृषि सब्सिडी</h2><p>कृषि उपकरण और अन्य सहायता/सब्सिडी।</p></a>
+    <a class="card" href="#"><div class="icon">🏪</div><h2>मंडी सेवाएं</h2><p>मंडी भाव और कृषि विपणन से संबंधित जानकारी।</p></a>
+
+    <a class="card" href="#"><div class="icon">🗺️</div><h2>Land Records</h2><p>भूमि रिकॉर्ड, खसरा, B-1 और अन्य सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">📍</div><h2>खसरा</h2><p>खसरा संबंधी रिकॉर्ड और जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">📑</div><h2>खतौनी / B-1</h2><p>भूमि खाते से संबंधित रिकॉर्ड।</p></a>
+    <a class="card" href="#"><div class="icon">🗺️</div><h2>भूमि नक्शा</h2><p>भूमि मानचित्र एवं संबंधित सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">🔄</div><h2>नामांतरण</h2><p>भूमि नामांतरण संबंधी जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">✂️</div><h2>बंटवारा</h2><p>भूमि बंटवारा संबंधी सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">📐</div><h2>सीमांकन</h2><p>भूमि सीमांकन संबंधी जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🏛️</div><h2>राजस्व सेवाएं</h2><p>राजस्व विभाग की महत्वपूर्ण सेवाएं।</p></a>
+
+    <a class="card" href="#"><div class="icon">👴</div><h2>पेंशन</h2><p>सामाजिक सुरक्षा और पेंशन संबंधी जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🤝</div><h2>सामाजिक सुरक्षा</h2><p>सामाजिक सुरक्षा योजनाओं की जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">👧</div><h2>लाड़ली लक्ष्मी योजना</h2><p>योजना की पात्रता, आवेदन और लाभ।</p></a>
+    <a class="card" href="#"><div class="icon">👩</div><h2>महिला योजनाएं</h2><p>महिलाओं के लिए सरकारी योजनाएं।</p></a>
+    <a class="card" href="#"><div class="icon">👶</div><h2>बाल योजनाएं</h2><p>बच्चों और बाल कल्याण से जुड़ी योजनाएं।</p></a>
+    <a class="card" href="#"><div class="icon">♿</div><h2>दिव्यांग योजनाएं</h2><p>दिव्यांगजन के लिए सरकारी सहायता।</p></a>
+    <a class="card" href="#"><div class="icon">👷</div><h2>श्रमिक योजनाएं</h2><p>श्रमिकों के लिए योजनाएं और सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">🛠️</div><h2>संबल योजना</h2><p>संबल योजना से संबंधित जानकारी।</p></a>
+
+    <a class="card" href="#"><div class="icon">🏥</div><h2>Health Services</h2><p>स्वास्थ्य विभाग और सरकारी स्वास्थ्य सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">❤️</div><h2>Ayushman</h2><p>आयुष्मान और स्वास्थ्य कार्ड संबंधी जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🏨</div><h2>अस्पताल सेवाएं</h2><p>सरकारी अस्पताल और स्वास्थ्य सुविधाएं।</p></a>
+
+    <a class="card" href="#"><div class="icon">💡</div><h2>बिजली सेवाएं</h2><p>बिजली कनेक्शन, बिल और अन्य सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">🚰</div><h2>पानी सेवाएं</h2><p>जल आपूर्ति और संबंधित नागरिक सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">🏙️</div><h2>नगर पालिका सेवाएं</h2><p>नगर निकाय की ऑनलाइन सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">🏠</div><h2>आवास योजनाएं</h2><p>सरकारी आवास योजनाओं की जानकारी।</p></a>
+
+    <a class="card" href="#"><div class="icon">🚗</div><h2>ड्राइविंग लाइसेंस</h2><p>DL आवेदन और परिवहन संबंधी सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">🚘</div><h2>वाहन सेवाएं</h2><p>वाहन पंजीयन और अन्य परिवहन सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">🚦</div><h2>ट्रैफिक चालान</h2><p>ई-चालान और भुगतान संबंधी जानकारी।</p></a>
+
+    <a class="card" href="#"><div class="icon">👮</div><h2>पुलिस सेवाएं</h2><p>पुलिस की ऑनलाइन नागरिक सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">📢</div><h2>ऑनलाइन शिकायत</h2><p>शिकायत दर्ज करने और स्थिति देखने की जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">📖</div><h2>RTI</h2><p>सूचना का अधिकार संबंधी जानकारी।</p></a>
+
+    <a class="card" href="#"><div class="icon">💼</div><h2>स्वरोजगार</h2><p>स्वरोजगार एवं उद्यमिता योजनाएं।</p></a>
+    <a class="card" href="#"><div class="icon">🏢</div><h2>व्यवसाय सेवाएं</h2><p>व्यवसाय शुरू करने और सरकारी सेवाओं की जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🏭</div><h2>MSME सेवाएं</h2><p>लघु उद्योग और MSME से संबंधित सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">📋</div><h2>लाइसेंस एवं परमिट</h2><p>व्यवसाय और अन्य लाइसेंस/परमिट संबंधी जानकारी।</p></a>
+
+    <a class="card" href="#"><div class="icon">🔎</div><h2>आवेदन की स्थिति</h2><p>ऑनलाइन आवेदन की स्थिति जांचें।</p></a>
+    <a class="card" href="#"><div class="icon">✅</div><h2>प्रमाण पत्र सत्यापन</h2><p>प्रमाण पत्र सत्यापन संबंधी सेवाएं।</p></a>
+    <a class="card" href="#"><div class="icon">☎️</div><h2>सरकारी हेल्पलाइन</h2><p>महत्वपूर्ण हेल्पलाइन नंबर और संपर्क जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🏛️</div><h2>सरकारी कार्यालय</h2><p>सरकारी विभाग और कार्यालयों की जानकारी।</p></a>
+    <a class="card" href="#"><div class="icon">🌐</div><h2>Important MP Government Websites</h2><p>मध्य प्रदेश के महत्वपूर्ण सरकारी पोर्टल और वेबसाइट।</p></a>
+  </main>
+
+  <footer class="footer">© Complete Exam Updates • Madhya Pradesh Sarkari Kaam</footer>
+</div>
+
+<script>
+const search = document.getElementById("search");
+const cards = [...document.querySelectorAll(".card")];
+search.addEventListener("input", () => {
+  const q = search.value.trim().toLowerCase();
+  cards.forEach(card => {
+    card.style.display = card.innerText.toLowerCase().includes(q) ? "block" : "none";
+  });
+});
+</script>
+</body>
+</html>
+'''
+
+path = Path("/mnt/data/madhya-pradesh-sarkari-kaam.html")
+path.write_text(html, encoding="utf-8")
+print(f"Created: {path}")
+  
