@@ -1,111 +1,131 @@
-<!doctype html>
-<html lang="hi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Complete Exam Updates - Latest government jobs, exam results, admit cards, answer keys, syllabus and government schemes.">
-<title>Complete Exam Updates | Latest Jobs, Results & Admit Cards</title>
+<title>Complete Exam Updates | 3D Exam Portal</title>
 <style>
-:root{--navy:#073b78;--blue:#0865cc;--red:#df101b;--ink:#17263b;--line:#c9dced;--bg:#f1f7fd}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.45 Arial,Helvetica,sans-serif}
-a{color:#064fa6;text-decoration:none}a:hover{text-decoration:underline}
-.top{background:linear-gradient(110deg,#052f67,#0b5eb1);color:#fff;padding:16px max(18px,calc((100% - 1240px)/2));display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{display:flex;align-items:center;gap:14px}.logo{font-size:43px;line-height:1}.brand h1{font-size:clamp(20px,3vw,32px);margin:0;font-weight:800}.brand p{margin:2px 0 0;font-size:14px}.tagline{text-align:right;font-weight:bold}.tagline small{display:block;font-weight:normal;margin-top:5px}
-nav{background:#d90c19;color:white;display:flex;justify-content:center;flex-wrap:wrap;padding:0 8px}nav a{color:white;padding:12px 14px;font-weight:bold;font-size:14px}nav a:hover{background:#ad0711;text-decoration:none}
-.wrap{max-width:1240px;margin:0 auto;padding:16px}.search{display:flex;max-width:850px;margin:0 auto 16px;background:#fff;border:2px solid #b9d8f4;border-radius:8px;overflow:hidden}.search input{flex:1;min-width:0;padding:13px;border:0;font-size:15px;outline:0}.search button{background:var(--blue);color:white;border:0;padding:0 24px;font-weight:bold;cursor:pointer}
-.quick{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:18px}.quick a{color:white;border-radius:7px;padding:15px 10px;text-align:center;font-weight:bold;box-shadow:0 2px 4px #0001}.quick a span{display:block;font-size:24px;margin-bottom:5px}.q1{background:#075ac3}.q2{background:#df111b}.q3{background:#07854c}.q4{background:#f27609}.q5{background:#4337bf}.q6{background:#087b91}
-.sections{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.panel{background:#fff;border:1px solid var(--line);border-radius:8px;overflow:hidden;box-shadow:0 2px 5px #0b4d8110}.panel h2{font-size:18px;margin:0;background:linear-gradient(90deg,#0756b4,#0874dc);color:white;padding:9px 12px;display:flex;align-items:center;justify-content:space-between}.panel h2 small{font-size:12px;font-weight:normal}.panel ul{list-style:none;margin:0;padding:6px 12px}.panel li{padding:8px 2px;border-bottom:1px solid #e8f0f8;display:flex;gap:8px;align-items:flex-start}.panel li:last-child{border-bottom:0}.panel li:before{content:"•";color:#0865cc;font-weight:bold}.panel li a{flex:1}.date{color:#7c8ea4;white-space:nowrap;font-size:12px}
-.cta{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;padding:18px 0}.cta a{padding:12px 20px;border-radius:7px;color:white;font-weight:bold}.wa{background:#078d4a}.yt{background:#df101b}
-.about{background:#fff;border:1px solid var(--line);border-radius:8px;padding:18px;margin:8px 0 18px}.about h2{margin:0 0 8px;color:var(--navy)}footer{background:#062f65;color:white;padding:22px 16px;text-align:center}footer a{color:#fff;margin:0 9px}footer p{margin:8px 0;font-size:13px}
-#noResults{display:none;text-align:center;padding:20px;background:white;border:1px solid var(--line);border-radius:8px}
-@media(max-width:850px){.quick{grid-template-columns:repeat(3,minmax(0,1fr))}.sections{grid-template-columns:repeat(2,minmax(0,1fr))}.tagline{display:none}nav a{padding:10px 9px}}
-@media(max-width:560px){.top{padding:14px}.logo{font-size:34px}.brand{gap:9px}.brand p{font-size:12px}.wrap{padding:10px}.quick{gap:7px}.quick a{padding:12px 5px;font-size:13px}.quick a span{font-size:21px}.sections{grid-template-columns:1fr;gap:12px}.panel h2{font-size:17px}.date{font-size:11px}.search button{padding:0 14px}nav a{font-size:12px;padding:9px 7px}}
+:root{--navy:#061944;--blue:#087cf0;--red:#c90016;--gold:#ffd52a}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#122447;background:linear-gradient(135deg,#eaf5ff,#c7e1ff);line-height:1.5}
+.topline{background:#031337;color:#dbeaff;padding:8px 4%;font-size:12px}
+.brand{background:linear-gradient(120deg,#a9000b,#ff2525 55%,#8d0000);color:white;padding:24px 4%;display:flex;align-items:center;justify-content:space-between;gap:20px;box-shadow:0 7px 0 #70000a,0 13px 24px #081b4538}
+.brand h1{font-size:clamp(25px,5vw,43px);margin:0;text-shadow:0 3px 0 #740000,0 6px 10px #35000088;letter-spacing:-1px}
+.brand p{margin:3px 0 0}
+.brand .motto{font-size:clamp(17px,3vw,26px);font-weight:bold;color:#ffe95b;text-shadow:0 3px 0 #7a3300;transform:rotate(-4deg);text-align:center}
+nav{display:flex;flex-wrap:wrap;justify-content:center;background:linear-gradient(#0a4eaf,#031b58);box-shadow:0 5px 12px #06194450}
+nav a{padding:13px 15px;color:#fff;text-decoration:none;font-size:13px;font-weight:bold;border-right:1px solid #ffffff22}
+nav a:hover{background:#0788ff}
+.hero{padding:36px 5%;color:white;background:radial-gradient(circle at 75% 20%,#3fbcff 0,#1266ce 25%,#061944 75%);display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:24px;overflow:hidden}
+.hero h2{font-size:clamp(28px,4.5vw,43px);line-height:1.12;margin:0 0 15px;text-shadow:0 4px 0 #00113c}
+.hero h2 span{color:#ffdf22}
+.hero p{max-width:480px}
+.cta{display:inline-block;background:linear-gradient(#fff04b,#ffb800);color:#10254b;text-decoration:none;font-weight:bold;padding:12px 20px;border-radius:30px;box-shadow:0 5px 0 #a75a00,0 9px 16px #00113880}
+.hero-art{display:flex;align-items:center;justify-content:center;min-height:210px;perspective:800px}
+.laptop{width:min(100%,390px);padding:18px;border:4px solid #a8d8ff;border-radius:16px;background:linear-gradient(145deg,#102d66,#020a22);box-shadow:12px 18px 0 #031238,0 25px 30px #0007;transform:rotateY(-12deg) rotateX(5deg)}
+.screen{background:linear-gradient(135deg,#078aff,#092b81);border:2px solid #5fcfff;border-radius:8px;text-align:center;padding:28px 10px;color:white;font-size:clamp(20px,3vw,31px);font-weight:900;text-shadow:0 3px #061944}
+.screen small{display:block;font-size:12px;color:#ffe64a;margin-top:8px}
+.bookstack{display:flex;flex-direction:column;gap:5px;margin-right:-12px;z-index:1;transform:rotateY(18deg)}
+.book{color:white;font-weight:bold;text-align:center;padding:9px 14px;border-radius:7px 3px 3px 7px;min-width:130px;box-shadow:0 5px 0 #00153c,5px 8px 10px #00113888;border-left:8px solid #ffffff55}
+.book:nth-child(1){background:linear-gradient(90deg,#00a9ff,#0051b8)}
+.book:nth-child(2){background:linear-gradient(90deg,#ff344a,#a40018)}
+.book:nth-child(3){background:linear-gradient(90deg,#19c47b,#087142)}
+.whatsapp{margin:18px 2.5%;padding:15px 20px;border-radius:16px;background:linear-gradient(110deg,#00a849,#00d66a);color:#fff;text-decoration:none;display:flex;justify-content:space-between;align-items:center;gap:12px;box-shadow:0 7px 0 #007a36,0 12px 20px #004a292b;font-weight:bold}
+.whatsapp span{font-size:12px;font-weight:normal;display:block}
+.wrap{width:95%;max-width:1400px;margin:25px auto}
+.section-head{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+.section-head h2{margin:0;color:#06377e;font-size:22px}
+.category-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:13px;perspective:1000px}
+.category{min-height:145px;padding:17px 10px;text-align:center;text-decoration:none;color:white;border-radius:14px;border:1px solid #ffffff90;box-shadow:0 7px 0 #09265d55,0 13px 18px #0a2d5b25;transform:rotateX(2deg);transition:transform .2s,box-shadow .2s}
+.category:hover{transform:translateY(-5px) rotateX(0) rotateY(-3deg);box-shadow:0 12px 0 #09265d44,0 18px 25px #0a2d5b33}
+.category b{display:block;font-size:31px;text-shadow:0 3px 0 #0004}
+.category strong{display:block;margin:6px 0}
+.category small{display:block;font-size:11px}
+.c1{background:linear-gradient(145deg,#139dff,#0346d0)}.c2{background:linear-gradient(145deg,#ff4a58,#b90013)}.c3{background:linear-gradient(145deg,#8b4bff,#3d06a9)}.c4{background:linear-gradient(145deg,#17d66e,#007438)}.c5{background:linear-gradient(145deg,#ffb323,#e45b00)}.c6{background:linear-gradient(145deg,#12caca,#006d88)}
+.main-grid{display:grid;grid-template-columns:2fr .9fr 1.15fr;gap:15px;margin-top:22px}
+.panel{background:linear-gradient(145deg,#fff,#f0f7ff);border:1px solid #c5ddfa;border-radius:13px;overflow:hidden;box-shadow:0 6px 0 #aac9ec,0 10px 18px #092d5d15;margin-bottom:15px}
+.panel h3{margin:0;background:linear-gradient(100deg,#e00017,#a60012);color:white;padding:11px 13px;font-size:17px;text-shadow:0 2px #62000a;box-shadow:0 3px 0 #79000b}
+.panel.bluehead h3{background:linear-gradient(100deg,#118bff,#0346ba)}
+.panel ul{list-style:none;margin:0;padding:8px 13px}
+.panel li{border-bottom:1px solid #dbe9f8;padding:9px 0;font-size:12px}
+.panel li:last-child{border-bottom:0}
+.panel li a{color:#07438d;text-decoration:none}
+.panel li a:hover{text-decoration:underline;color:#e00017}
+.date{display:inline-block;background:#dcecff;border-radius:5px;padding:3px 5px;margin-right:6px;font-size:10px;color:#204774}
+.view{display:block;width:max-content;margin:7px 12px 13px auto;background:linear-gradient(#38a5ff,#0866cb);color:white;text-decoration:none;padding:8px 15px;border-radius:24px;box-shadow:0 3px 0 #06448d;font-size:12px}
+.lower-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:4px}
+.lower-grid .panel h3{font-size:15px}
+.promo{background:radial-gradient(circle at 20% 20%,#1674df,#031641);color:white;padding:20px;border-radius:13px;box-shadow:0 7px 0 #061944;display:flex;align-items:center;gap:15px}
+.promo .emoji{font-size:55px;filter:drop-shadow(0 6px 2px #0007)}
+.promo h3{font-size:22px;color:#ffe64b;margin:0 0 10px}
+footer{background:linear-gradient(120deg,#031337,#073e91);color:white;padding:25px 4%;margin-top:30px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+footer a{color:#ffdf4e;text-decoration:none}
+@media(max-width:900px){.category-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.main-grid{grid-template-columns:1fr 1fr}.latest-panel{grid-column:1/-1}.lower-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero{grid-template-columns:1fr}.hero-art{min-height:180px}}
+@media(max-width:560px){.brand{display:block;text-align:center}.brand .motto{margin-top:12px}.hero{padding:27px 5%}.hero-art{transform:scale(.93);transform-origin:center}.book{min-width:105px;padding:8px 6px;font-size:12px}.category-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.category{min-height:130px}.main-grid,.lower-grid{grid-template-columns:1fr}.latest-panel{grid-column:auto}.whatsapp{margin:15px 3%;padding:13px}.wrap{width:94%}nav a{padding:10px 8px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
-<header class="top">
-  <div class="brand"><div class="logo" aria-hidden="true">🇮🇳</div><div><h1>COMPLETE EXAM UPDATES</h1><p>CompleteExamUpdates.in</p></div></div>
-  <div class="tagline">Sarkari Job | Exam | Result | Admit Card<small>Sabhi Sarkari Exam Ki Sahi Aur Latest Jankari</small></div>
+<div class="topline">Welcome to Complete Exam Updates | Your Trusted Source for Government Jobs & Exams</div>
+<header class="brand">
+  <div><h1>📚 Complete Exam Updates</h1><p>Latest Government Jobs | Admit Card | Result | Syllabus | Answer Key</p></div>
+  <div class="motto">Your Success<br>Our Mission ✦</div>
 </header>
-<nav aria-label="Main navigation">
-  <a href="#">Home</a><a href="#jobs">Latest Jobs</a><a href="#admit">Admit Card</a><a href="#results">Results</a><a href="#answer">Answer Key</a><a href="#syllabus">Syllabus</a><a href="#admission">Admission</a><a href="#yojana">Sarkari Yojana</a><a href="#kaam">Sarkari Kaam</a><a href="#tools">Tools</a>
+<nav>
+  <a href="#">⌂ Home</a><a href="#latest">▣ Latest Jobs</a><a href="#admit">▣ Admit Card</a><a href="#results">🏆 Result</a><a href="#answer">⚿ Answer Key</a><a href="#syllabus">▤ Syllabus</a><a href="#study">▣ Study Material</a><a href="#more">More⌄</a>
 </nav>
+<section class="hero">
+  <div><h2>Latest Government Jobs<br>and <span>Exam Updates</span></h2><p>Get complete information about recruitment, admit cards, results, syllabus, answer keys and more.</p><a class="cta" href="#categories">⌕ Explore All Exams →</a></div>
+  <div class="hero-art" aria-label="3D books and laptop illustration">
+    <div class="bookstack"><div class="book">SSC</div><div class="book">RAILWAY</div><div class="book">BANKING</div></div>
+    <div class="laptop"><div class="screen">DREAM<br>PREPARE<br><span style="color:#ffe64a">ACHIEVE</span><small>COMPLETE EXAM UPDATES</small></div></div>
+  </div>
+</section>
+<a class="whatsapp" href="https://whatsapp.com/channel/0029Vb6BZCo2phHKDluj2r04" target="_blank" rel="noopener"><div>🟢 Join Our WhatsApp Channel<span>Get latest updates directly on your mobile</span></div><b>Join Now →</b></a>
 <main class="wrap">
-  <form class="search" id="searchForm" role="search"><input id="searchInput" type="search" placeholder="Search job, exam, result, admit card, syllabus..." aria-label="Search website"><button type="submit">Search</button></form>
-  <div class="quick">
-    <a class="q1" href="#jobs"><span>▣</span>Latest Govt Jobs</a>
-    <a class="q2" href="#admit"><span>▤</span>Admit Card</a>
-    <a class="q3" href="#results"><span>✓</span>Results</a>
-    <a class="q4" href="#answer"><span>⚿</span>Answer Key</a>
-    <a class="q5" href="#syllabus"><span>▥</span>Syllabus</a>
-    <a class="q6" href="#admission"><span>🎓</span>Admission</a>
-  </div>
-  <div class="sections" id="sections">
-    <section class="panel" id="jobs"><h2>Latest Jobs <small>View All →</small></h2><ul>
-      <li><a href="#">SSC CHSL Recruitment 2026 – Apply Online</a><span class="date">Latest</span></li>
-      <li><a href="#">NICL AO Recruitment 2026</a><span class="date">Latest</span></li>
-      <li><a href="#">MP Police Constable Recruitment</a></li><li><a href="#">Railway RRB NTPC Recruitment</a></li><li><a href="#">BPSC Teacher Recruitment</a></li></ul></section>
-    <section class="panel" id="results"><h2>Results <small>View All →</small></h2><ul>
-      <li><a href="#">SSC CGL Tier-I Result 2026</a></li><li><a href="#">UPSC Civil Services Prelims Result</a></li><li><a href="#">RRB NTPC Result</a></li><li><a href="#">Bihar STET Result</a></li><li><a href="#">MP Board Result Updates</a></li></ul></section>
-    <section class="panel" id="admit"><h2>Admit Cards <small>View All →</small></h2><ul>
-      <li><a href="#">SSC CHSL Admit Card</a></li><li><a href="#">UP Police Constable Admit Card</a></li><li><a href="#">RRB NTPC Admit Card</a></li><li><a href="#">BPSC Exam Admit Card</a></li><li><a href="#">MPESB Admit Card</a></li></ul></section>
-    <section class="panel" id="answer"><h2>Answer Key <small>View All →</small></h2><ul>
-      <li><a href="#">SSC CGL Answer Key</a></li><li><a href="#">UPSSSC PET Answer Key</a></li><li><a href="#">RRB NTPC Answer Key</a></li><li><a href="#">Bihar STET Answer Key</a></li><li><a href="#">MP TET Answer Key</a></li></ul></section>
-    <section class="panel" id="syllabus"><h2>Syllabus <small>View All →</small></h2><ul>
-      <li><a href="#">UPSC Syllabus 2026</a></li><li><a href="#">SSC CGL Syllabus</a></li><li><a href="#">Railway NTPC Syllabus</a></li><li><a href="#">BPSC Syllabus</a></li><li><a href="#">Police Exam Syllabus</a></li></ul></section>
-    <section class="panel" id="admission"><h2>Admission <small>View All →</small></h2><ul>
-      <li><a href="#">University Admission Updates</a></li><li><a href="#">NTA UGC NET Online Form</a></li><li><a href="#">NVS Class 9 Admission</a></li><li><a href="#">ITI Admission 2026</a></li><li><a href="#">Scholarship Admission Updates</a></li></ul></section>
-    <section class="panel" id="yojana"><h2>Sarkari Yojana <small>View All →</small></h2><ul>
-      <li><a href="#">PM Kisan Samman Nidhi</a></li><li><a href="#">Ayushman Bharat Yojana</a></li><li><a href="#">PM Awas Yojana</a></li><li><a href="#">Scholarship Schemes</a></li><li><a href="#">State Government Schemes</a></li></ul></section>
-    <section class="panel" id="kaam"><h2>Sarkari Kaam <small>View All →</small></h2><ul>
-      <li><a href="#">Aadhaar Card Services</a></li><li><a href="#">PAN Card Apply / Correction</a></li><li><a href="#">Voter ID Services</a></li><li><a href="#">Income Certificate Information</a></li><li><a href="#">Caste Certificate Information</a></li></ul></section>
-    <section class="panel" id="tools"><h2>Useful Tools <small>View All →</small></h2><ul>
-      <li><a href="#">Age Calculator</a></li><li><a href="#">Percentage Calculator</a></li><li><a href="#">Image Resize Tool</a></li><li><a href="#">Photo & Signature Joiner</a></li><li><a href="#">PDF Tools</a></li></ul></section>
-  </div>
-  <div id="noResults">कोई मिलती-जुलती जानकारी नहीं मिली। दूसरे शब्द से खोजें।</div>
-  <div class="cta"><a class="wa" href="https://whatsapp.com/" target="_blank" rel="noopener">☏ Join WhatsApp Channel</a><a class="yt" href="https://youtube.com/" target="_blank" rel="noopener">▶ Subscribe on YouTube</a></div>
-  <section class="about"><h2>Complete Exam Updates – Sarkari Job, Result & Exam Information</h2><p>CompleteExamUpdates.in पर सरकारी नौकरी, भर्ती, परीक्षा परिणाम, एडमिट कार्ड, आंसर की, सिलेबस, प्रवेश, छात्रवृत्ति और सरकारी योजनाओं की जानकारी एक ही जगह देने का उद्देश्य है। आवेदन करने से पहले संबंधित विभाग की आधिकारिक वेबसाइट पर नोटिफिकेशन और अंतिम तिथि जरूर जांचें।</p><p><strong>Disclaimer:</strong> यह वेबसाइट सरकारी वेबसाइट नहीं है। जानकारी प्रकाशित करने से पहले आधिकारिक स्रोत से सत्यापन करें।</p></section>
+  <section id="categories">
+    <div class="section-head"><h2>▦ Explore Exam Categories</h2><a class="view" href="#latest">View All Categories →</a></div>
+    <div class="category-grid">
+      <a class="category c1" href="#latest"><b>🏅</b><strong>SSC Exams</strong><small>CGL, CHSL, GD, MTS & More</small></a>
+      <a class="category c2" href="#latest"><b>🚆</b><strong>Railway Jobs</strong><small>RRB NTPC, Group D, ALP & More</small></a>
+      <a class="category c3" href="#latest"><b>👮</b><strong>Police Jobs</strong><small>Constable, SI, Sub Inspector</small></a>
+      <a class="category c4" href="#latest"><b>🏦</b><strong>Banking Exams</strong><small>IBPS, SBI, RBI & More</small></a>
+      <a class="category c5" href="#latest"><b>👩‍🏫</b><strong>Teaching Jobs</strong><small>TET, CTET, Teacher Recruitment</small></a>
+      <a class="category c6" href="#latest"><b>🏛️</b><strong>State Exams</strong><small>MPPSC, UPPSC, BPSC & More</small></a>
+    </div>
+  </section>
+  <section class="main-grid">
+    <div class="panel latest-panel" id="latest"><h3>◉ Latest Updates</h3><ul>
+      <li><span class="date">14 Oct</span><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC official recruitment and exam updates</a> <b style="color:#d00">NEW</b></li>
+      <li><span class="date">13 Oct</span><a href="https://esb.mp.gov.in/" target="_blank" rel="noopener">Madhya Pradesh ESB notifications and results</a></li>
+      <li><span class="date">12 Oct</span><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway RRB recruitment updates</a></li>
+      <li><span class="date">11 Oct</span><a href="https://www.ibps.in/" target="_blank" rel="noopener">IBPS banking recruitment notices</a></li>
+      <li><span class="date">10 Oct</span><a href="https://upsc.gov.in/" target="_blank" rel="noopener">UPSC notifications and examination calendar</a></li>
+      <li><span class="date">09 Oct</span><a href="https://www.nta.ac.in/" target="_blank" rel="noopener">NTA examination notices and answer keys</a></li>
+      <li><span class="date">08 Oct</span><a href="https://www.joinindianarmy.nic.in/" target="_blank" rel="noopener">Defence recruitment official updates</a></li>
+    </ul><a class="view" href="https://ssc.gov.in/" target="_blank" rel="noopener">View All →</a></div>
+    <div class="panel bluehead"><h3>🔗 Quick Links</h3><ul>
+      <li><a href="#latest">▣ Latest Recruitment</a></li><li><a href="#admit">▣ Admit Card</a></li><li><a href="#results">🏆 Results</a></li><li><a href="#answer">⚿ Answer Key</a></li><li><a href="#syllabus">▤ Syllabus</a></li><li><a href="#study">📘 Study Material</a></li>
+    </ul></div>
+    <div class="panel bluehead" id="connect"><h3>◎ Connect With Us</h3><ul>
+      <li><a href="https://completeexamupdates.github.io/-Complet-examupdates/" target="_blank" rel="noopener">🌐 Official Website</a></li>
+      <li><a href="https://youtube.com/@completeexamupdates" target="_blank" rel="noopener">▶ YouTube Channel</a></li>
+      <li><a href="https://whatsapp.com/channel/0029Vb6BZCo2phHKDluj2r04" target="_blank" rel="noopener">🟢 WhatsApp Channel</a></li>
+      <li><a href="https://www.facebook.com/share/1bQicXKe6w/" target="_blank" rel="noopener">f Facebook Page</a></li>
+      <li><a href="https://www.instagram.com/completeexamupdates/" target="_blank" rel="noopener">◎ Instagram Page</a></li>
+    </ul></div>
+  </section>
+  <section class="lower-grid">
+    <div class="panel" id="results"><h3>🏆 Results</h3><ul><li><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Results</a></li><li><a href="https://esb.mp.gov.in/" target="_blank" rel="noopener">MPESB Results</a></li><li><a href="https://upsc.gov.in/" target="_blank" rel="noopener">UPSC Results</a></li><li><a href="https://www.ibps.in/" target="_blank" rel="noopener">IBPS Results</a></li></ul><a class="view" href="https://ssc.gov.in/" target="_blank" rel="noopener">View All →</a></div>
+    <div class="panel" id="admit"><h3>▣ Admit Cards</h3><ul><li><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Admit Cards</a></li><li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway Admit Cards</a></li><li><a href="https://esb.mp.gov.in/" target="_blank" rel="noopener">MPESB Admit Cards</a></li><li><a href="https://ctet.nic.in/" target="_blank" rel="noopener">CTET Admit Cards</a></li></ul><a class="view" href="#admit">View All →</a></div>
+    <div class="panel" id="answer"><h3>⚿ Answer Key</h3><ul><li><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Answer Keys</a></li><li><a href="https://esb.mp.gov.in/" target="_blank" rel="noopener">MPESB Answer Keys</a></li><li><a href="https://www.nta.ac.in/" target="_blank" rel="noopener">NTA Answer Keys</a></li><li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway Answer Keys</a></li></ul><a class="view" href="#answer">View All →</a></div>
+    <div class="panel" id="syllabus"><h3>▤ Syllabus</h3><ul><li><a href="https://ssc.gov.in/" target="_blank" rel="noopener">SSC Syllabus</a></li><li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway Syllabus</a></li><li><a href="https://upsc.gov.in/" target="_blank" rel="noopener">UPSC Syllabus</a></li><li><a href="https://www.ibps.in/" target="_blank" rel="noopener">Banking Syllabus</a></li></ul><a class="view" href="#syllabus">View All →</a></div>
+    <div class="panel"><h3>🎓 10th / 12th / ITI Jobs</h3><ul><li><a href="https://www.indiapost.gov.in/" target="_blank" rel="noopener">India Post Recruitment</a></li><li><a href="https://www.joinindianarmy.nic.in/" target="_blank" rel="noopener">Defence Jobs</a></li><li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway Jobs</a></li><li><a href="https://esb.mp.gov.in/" target="_blank" rel="noopener">MP Government Jobs</a></li></ul></div>
+    <div class="panel" id="study"><h3>📘 Study Material</h3><ul><li><a href="#study">Previous Year Papers</a></li><li><a href="#study">Mock Test Series</a></li><li><a href="#study">General Knowledge</a></li><li><a href="#study">Reasoning Practice</a></li></ul></div>
+    <div class="promo" style="grid-column:span 2"><div class="emoji">📚</div><div><h3>Study Today<br>For a Better Tomorrow</h3><p>Prepare smart. Practice daily. Achieve your goal.</p><a class="cta" href="#study">Explore Study Material →</a></div></div>
+  </section>
 </main>
-<footer><p><strong>COMPLETE EXAM UPDATES</strong> · Bharat Ka Digital Exam Portal</p><p><a href="#">Home</a><a href="#about">About Us</a><a href="#contact">Contact Us</a><a href="#privacy">Privacy Policy</a><a href="#disclaimer">Disclaimer</a></p><p>© 2026 CompleteExamUpdates.in · All Rights Reserved</p><p>Sahi Jankari | Sahi Samay | Aapke Liye</p></footer>
-<script>
-const form=document.getElementById('searchForm'), input=document.getElementById('searchInput');
-function searchItems(){const q=input.value.trim().toLowerCase();let count=0;document.querySelectorAll('.panel').forEach(panel=>{let hits=0;panel.querySelectorAll('li').forEach(li=>{const show=!q||li.textContent.toLowerCase().includes(q);li.style.display=show?'flex':'none';if(show)hits++;});panel.style.display=hits?'block':'none';if(hits)count++;});document.getElementById('noResults').style.display=count?'none':'block';}
-form.addEventListener('submit',e=>{e.preventDefault();searchItems();});
-input.addEventListener('input',searchItems);
-</script>
-<!-- Complete Exam Updates - Connect With Us -->
-<div style="background:#082f65;color:white;padding:20px 12px;text-align:center;margin-top:20px;border-radius:8px;">
-  <h2 style="margin:0 0 15px;">Connect With Complete Exam Updates</h2>
-
-  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:10px;">
-
-    <a href="https://completeexamupdates.github.io/-Complet-examupdates/"
-       target="_blank" rel="noopener"
-       style="background:#1674df;color:white;padding:12px 16px;border-radius:6px;text-decoration:none;font-weight:bold;">
-       🌐 Website
-    </a>
-
-    <a href="https://youtube.com/@completeexamupdates?si=k2DecnHYyhEnNQNe"
-       target="_blank" rel="noopener"
-       style="background:#e60000;color:white;padding:12px 16px;border-radius:6px;text-decoration:none;font-weight:bold;">
-       ▶ YouTube
-    </a>
-
-    <a href="https://whatsapp.com/channel/0029Vb6BZCo2phHKDluj2r04"
-       target="_blank" rel="noopener"
-       style="background:#128c4a;color:white;padding:12px 16px;border-radius:6px;text-decoration:none;font-weight:bold;">
-       ☎ WhatsApp Channel
-    </a>
-
-    <a href="https://www.facebook.com/share/1bQicXKe6w/"
-       target="_blank" rel="noopener"
-       style="background:#1877f2;color:white;padding:12px 16px;border-radius:6px;text-decoration:none;font-weight:bold;">
-       f Facebook
-    </a>
-
-    <a href="https://www.instagram.com/completeexamupdates?stkn=NnQxZXR4amVjaGow"
-       target="_blank" rel="noopener"
-       style="background:#c13584;color:white;padding:12px 16px;border-radius:6px;text-decoration:none;font-weight:bold;">📸 Instagram </a></div>
- <p style="margin:18px 0 0;font-size:14px;">Complete Exam Updates | Sarkari Job, Results, Admit Cards & Exam News</p></div>
+<footer><div><strong>📚 Complete Exam Updates</strong><br><small>Your trusted source for government exam information</small></div><div><a href="#">Home</a>　|　<a href="#connect">Contact Us</a>　|　<a href="#connect">Social Channels</a></div><div><small>Disclaimer: Verify all recruitment details on official department websites.<br>© <span id="year"></span> Complete Exam Updates.</small></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
-</html>'''
+</html>
